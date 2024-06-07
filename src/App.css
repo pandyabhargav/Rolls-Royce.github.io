@@ -1,0 +1,347 @@
+.img {
+height: 100vh;
+object-fit: cover;
+
+}
+.baner-2{
+  position: relative;
+}
+.baner-2 img{
+  width: 100%;
+  height: 100%;
+}
+.baner-2 .tire{
+  position: absolute;
+  animation: animName 5s linear infinite;
+  top: 63%;
+  left: 45%;
+  width: 350px;
+  height: 350px;
+}
+@keyframes animName {
+  0%{
+     transform: rotate(0deg);
+    }
+ 100%{
+     transform: rotate(360deg);
+    }
+ }
+ 
+.baner-2 .tire-logo{
+  position: absolute;
+  top: 813px;
+  left: 996px;
+  height: 70px;
+  width: 70px;
+}
+.row>* {
+  padding: 0;
+
+}
+
+.swiper-button-next ,.swiper-button-prev{
+  visibility: hidden;
+}
+
+.card-img-overlay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.card-img-overlay h5{
+  font-size: 80px;
+  font-weight: 200;
+}
+
+
+
+
+/* card section */
+.bg-colr{
+  background-color: #0E0D19;
+  color: white;
+  width:100vw;
+  height: auto;
+}
+.card-body{
+  border-left: 0.2px solid rgba(255, 255, 255, 0.482);
+}
+.bg-card{
+  background-color: transparent;
+  
+}
+.wrap{
+  overflow: hidden;
+  
+}
+.card-img-top{
+  height: auto;
+  width: 100%;
+}
+.card-img-top:hover{
+  scale: 1.2;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.bg-col-foter{
+  background-color: #151515;
+  height: 35vh;
+}
+.flogo{
+  text-align: center;
+}
+.flogo:hover h5{
+  color:#e2e2e232;
+  transition: all 0.5s;
+}
+.flogo:hover p{
+  color:#e2e2e232;
+  transition: all 0.5s;
+}
+.bg-col-foter h5 ,p{
+  color:#E2E2E2;
+  padding: 0;
+  margin: 0;
+}
+.bg-col-foter p{
+  color:#E2E2E2;
+  font-size: 10px;
+}
+.bg-col-foter hr{
+  border: 1px solid  #ab9d9d;
+}
+.bg-col-foter h6{
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 3px;
+}
+.bg-col-foter h6:hover{
+  color:#e2e2e232;
+  transition: all 0.5s;
+}
+.bg-col-foter h4{
+  padding: 7px;
+  color: #696969;
+}
+
+
+
+
+/* normaltext */
+.text1{
+  width: 100%;
+  height: 945px;
+}
+.text{
+  width: 100%;
+  height: 945px;
+}
+.text h3{
+  color: #000000;
+  font-weight: 400;
+}
+.text p{
+  color: #888888;
+}
+
+
+/* Variables */
+:root {
+  
+  --cyan: #323232;
+  --red: #323232;
+}
+
+/* Basic styles */
+.main-btn i{
+  font-size: 20px;
+  margin-left: 0.2em;
+
+  vertical-align: middle;
+  
+}
+.main-btn {
+  background: none;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  margin: 1em;
+  padding: 1em 4em;
+  box-shadow: inset 0 0 0 1px var(--red);
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 500;
+  position: relative;
+  border-radius: 50px;
+  overflow: hidden;
+  background-size: cover;
+  text-transform: capitalize;
+  transition: all 10s;
+}
+.main-btn:hover {
+  color: white;
+  box-shadow: inset 0 0 0 2px white;
+
+  
+}
+
+.main-btn::before,
+.main-btn::after {
+  box-sizing: inherit;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+}
+.main-btn i {
+
+  display: none;
+  color: #515151;
+}
+.main-btn:hover i {
+ 
+  display: inline-block;
+  transition: all 0.5s;
+}
+
+/* .draw */
+.draw {
+  transition: color 0.25s;
+  border: 1px solid transparent;
+}
+
+.draw::before,
+.draw::after {
+  border: 1px solid transparent;
+  width: 0;
+  height: 0;
+  border-radius: 50px;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.draw::before {
+  top: 0;
+  left: 0;
+  
+}
+
+.draw::after {
+  bottom: 0;
+  right: 0;
+}
+
+.draw:hover {
+  color: var(--cyan);
+}
+
+.draw:hover::before,
+.draw:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+.draw:hover::before {
+  border-top-color: var(--cyan);
+  border-right-color: var(--cyan);
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+
+.draw:hover::after {
+  border-bottom-color: var(--cyan);
+  border-left-color: var(--cyan);
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+
+
+/* Text */
+.Text h2{
+  font-size: 38px;
+  font-weight: 350;
+  color: #515151;
+  line-height: 45px;
+}
+
+
+/* purple-car */
+.purple-car img{
+width: 100%;
+background-size: cover;
+}
+
+
+
+
+
+
+/* scale img */
+.header {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  padding: 0 10vw;
+}
+
+.image {
+  background-image: url(../image/bgorange.jpeg);
+  line-height: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+}
+
+.image > div {
+  width: 100%;
+}
+.image img {
+  width: 100%;
+  object-fit: contain;
+}
+
+#grow {
+  transform: scale(0.8);
+}
+
+
+
+/* parax-img */
+.par-img-1{
+  display: flex;
+  bottom: 100px;
+}
+.par-img-1 .img-1{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  top: 0%;
+}
+.par-img-2{
+  display: flex;
+  position: relative;
+  bottom: 700px;
+
+}
+.par-img-2 .img-2{
+  width: 100%;
+  height: 100vh;
+  z-index: 99999;
+}
+.par-img-3{
+  position: relative;
+}
+.img-3{
+  position: absolute;
+  bottom: 0px;
+  z-index: -99999;
+  width: 100%;
+  height: 90vh;
+}

@@ -1,0 +1,222 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  cursor: none;
+}
+
+
+
+/* Custom Cursor */
+.custom-cursor, .custom-cursor-dot {
+  position:fixed; z-index:99999; top:0; left:0;
+  transform:translate(-50%, -50%);
+  pointer-events:none; opacity:0;
+}
+
+/* decorative */
+.custom-cursor {width:15px; height:15px; border:1px solid #020202; border-radius:50%;}
+/* .custom-cursor-dot {width:7px; height:7px; border-radius:50%; background-color:#1c1c1c;} */
+
+iframe{
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+body{
+/* background-color: rgb(0, 0, 0); */
+position: relative;
+}
+ul{
+list-style: none;
+}
+.pT-120 li{
+text-align: end;
+color: #A8B4B5;
+font-size: 16px;
+font-weight: 500;
+text-transform: uppercase;
+padding: 20px 100px 20px 0px;
+}
+.pT-120 :hover{
+color: #fff;
+transition: all 0.5s;
+}
+header{
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+  background-color: transparent;
+  color: #aaa7a7;
+  position: absolute;
+  z-index: 99999;
+  width: 100%;
+  top: 0px;
+  left: 0;
+}
+/* toglemenu */
+.offcanvas-start {
+width: 800px;
+}
+.offcanvas{
+-webkit-backdrop-filter: blur(20px) saturate(1.8);
+backdrop-filter: blur(20px) saturate(1.8);
+background: rgba(0, 0, 0, 0.376);
+}
+.main-nav{
+border-bottom: 1px solid rgb(255, 255, 255);
+height: 100px;
+}
+/* logo */
+.logo img{
+width: 48px;
+height: 48px;
+}
+.btn1{
+background-color: transparent;
+color: white;
+outline: none;
+border: none;
+z-index: 99999;
+transition: transform 0.3s ease;
+font-size: 12px;
+font-weight: 500;
+text-transform: uppercase;
+}
+.btn1:hover .icon-1{
+background-color: transparent;
+color: white;
+outline: none;
+border: none;
+animation: rotation 0.2s 1 linear;
+transform: scale(1.1);
+}
+.btn1:hover i{
+background-color: transparent;
+color: white;
+outline: none;
+}
+.btn1 i{
+font-size: 18px;
+}
+
+
+.FdeLer{
+color: white;
+font-size: 12px;
+font-weight: 500;
+text-transform: uppercase;
+}
+.FdeLer:hover i{
+rotate: z 360deg;
+transition: all 0.5s;
+}
+
+@keyframes rotation {
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotatey(180deg);
+}
+}
+
+/* swiper css */
+.swiper {
+  width: 100%;
+  height: 945px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 963px;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Media Queries */
+
+/* Large Devices (Desktops, 1200px and above) */
+@media (max-width: 1200px) {
+  
+}
+
+/* Medium Devices (Tablets, 768px to 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  
+  .baner-2 .tire{
+    display: none;
+  }
+ 
+  .baner-2 .tire-logo{
+    display: none;
+  }
+  .text1{
+    width: 100%;
+    height: 945px;
+  }
+  .text{
+    width: 100%;
+  height: 945px;
+  }
+  .card-img-top{
+    height: 5oopx;
+    width: 100%;
+  }
+}
+
+/* Small Devices (Large Phones, 480px to 767px) */
+@media (max-width: 767px) and (min-width: 480px) {
+  .baner-2 .tire{
+    display: none;
+  }
+ 
+  .baner-2 .tire-logo{
+    display: none;
+  }
+  .text1{
+    width: 100%;
+    height: 945px;
+  }
+  .text{
+    width: 100%;
+  height: 945px;
+  }
+  .card-img-top{
+    height: 1opx;
+    width: 100%;
+  }
+}
+
+/* Extra Small Devices (Phones, less than 480px) */
+@media (max-width: 479px) {
+  .baner-2 .tire{
+    display: none;
+  }
+ 
+  .baner-2 .tire-logo{
+    display: none;
+  }
+  .text1{
+    width: 100%;
+    height: 945px;
+  }
+  .text{
+    width: 100%;
+  height: 945px;
+  }
+}
+
